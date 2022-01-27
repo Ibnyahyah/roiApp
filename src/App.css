@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;400;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Source+Sans+3:wght@200;400;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400&display=swap');
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.br-md{
+    border-radius: 20px;
+}
+button{
+    box-shadow:1px 4px 6px rgba(0,0,0,0.05);
+}
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.05);
+}
+/* about-token */
+.about-token{
+    font-family: 'Source Sans 3', sans-serif !important;
+}
+.about-token .content h1{
+    font-size: 100px;
+    color:rgb(73, 73, 73);
+}
+.about-token .content p{
+    font-size:30px;
+    margin-top:20px;
+    font-family: 'Dongle', sans-serif !important;
+}
+.token-details{
+    text-align: center;
+}
+.token-details h1{
+    font-size:50px;
+}
+.token-details p{
+    font-family: 'Dongle', sans-serif !important;
+    font-size:25px;
+}
+.social-link{
+    text-align: center;
+}
+.social-link h2{
+    display: grid;
+    grid-template-columns: minmax(50px, 1fr)auto minmax(50px, 1fr);
+    align-items: center;
+    text-align:center;
+    gap:40px;
+}
+.social-link h2::before, .social-link h2::after{
+    content:'';
+    border-top:6px double;
+}
+.token-distribution h1{
+    display: grid;
+    grid-template-columns: minmax(50px, 1fr)auto minmax(50px, 1fr);
+    align-items: center;
+    text-align:center;
+    gap:40px;
+    font-size: 100px;
+    font-family: 'Dongle', sans-serif !important;
+}
+.token-distribution h1::before, .token-distribution h1::after{
+    content:'';
+    border-top:6px double white;
+}
+.token-distribution .card h2{
+    font-size: 35px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+.token-distribution .card p{
+    font-size:30px;
+    font-family: 'Dongle', sans-serif !important;
+    line-height: 20px!important;
+    font-weight: 300;
+}
+.card{
+    box-shadow: 2px 6px 6px rgba(0,0,0,0.2);
+    border-radius:20px;
+}
+.menu-icon, .social-icon{
+    display: none;
+  }
+  .fa-bars{
+    color: red;
+  }
+/* old styel */
+header img{
+    width:220px;
+    height:80px;
+}
+form input{
+    width:97%;
+    padding:5px;
+}
+form textarea{
+    width:97%;
+    padding:5px;
+}
+form button{
+    width:100%;
+    padding:5px;
+}
+@media screen and (max-width:960px){
+    /* nav{
+        display: flex;
+        flex-direction: column !important;
+    }
+    nav ul li a{
+        font-size:15px !important;
+    }
+    .card{
+        width:100% !important;
+        overflow:hidden;
+    }
+    span{
+        font-size:15px;
+    }
+    .contact{
+        margin-left:-12px;
+    } */
+
+
+    /* 
+    New style
+    */
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        position: absolute;
+        top:80px;
+        left:-100%;
+        opacity: 1;
+        transition: all 0.9s ease;
+        }
+        .item.active{
+        background: #fff;
+        padding-top:20px;
+        left:0;
+        opacity: 1;
+        transition: all 1s ease;
+        height:90vh;
+        z-index: 1;
+        color:red;
+        }
+        .item.active li{
+          margin-top:10px;
+        }
+        .menu-icon{
+        display: block;
+        position:absolute;
+        top:0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        margin-top: -5px;
+        }
+        .social-icon{
+            display:inline;
+            flex: end;
+        }
+        .fa-times{
+        font-size: 2rem;
+        color: red;
+        z-index: 2;
+        }
+    
+    .about-token .content h1{
+        font-size: 50px;
+    }
+    .about-token .content p{
+        font-size:25px;
+    }
+    .about-token .address{
+        margin-left: -10px;
+    }
+    .token-details h1{
+        font-size:50px;
+    }
+    .token-details p{
+        font-size:20px;
+    }
+    .token-distribution h1{
+        font-size: 60px;
+    }
+    .token-distribution .card h2{
+        font-size: 25px;
+    }
+    .token-distribution .card p{
+        font-size:20px;
+    }
+    .card{
+        width:85vw;
+        margin-left:-10px;
+    }
+}
+@media screen and (max-width:360px){
+    nav ul li a{
+        font-size:12px !important;
+    }
+    span{
+        font-size:14px;
+    }
+
+}
