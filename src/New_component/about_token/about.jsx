@@ -5,7 +5,7 @@ export default function AboutToken(){
     return(
         <div className="bg-white display-f align-center about-token" style={{minHeight:'110vh'}}>
             <div className="container">
-                <div classname="row">
+                <div className="row">
                     <div className="col-6-sm col-6-md">
                         <div className="content">
                             <h1>

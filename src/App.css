@@ -238,6 +238,18 @@ form button{
         width:89vw;
         margin-left:-10px;
     }
+
+     /* Home page */
+     .top-section .card{
+         padding: 10px !important;;
+     }
+    .top-section .card h1{
+        font-size:30px;
+        font-weight: 700;
+    }
+    .top-section .card span{
+        font-size:50px;
+    }
 }
 @media screen and (max-width:360px){
     nav ul li a{
