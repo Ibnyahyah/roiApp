@@ -17,7 +17,7 @@ button{
     top:0;
     left:0;
     right:0;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(26, 26, 26, 0.3);
 }
 /* about-token */
 .about-token{
@@ -26,6 +26,23 @@ button{
 .about-token .content h1{
     font-size: 100px;
     color:rgb(73, 73, 73);
+}
+.shi{
+    text-shadow: 1px 1px 1px white,
+        1px 2px 1px white,
+        1px 3px 1px white,
+        1px 4px 1px white,
+        1px 5px 1px white,
+        1px 6px 1px white,
+        1px 7px 1px white,
+        1px 8px 1px white,
+        1px 8px 1px white,
+        1px 8px 1px white,
+        1px 18px 6px rgba(16,16,16,0.4),
+        1px 22px 10px rgba(16,16,16,0.2),
+        1px 25px 35px rgba(16,16,16,0.2),
+        1px 30px 60px rgba(16,16,16,0.4);
+        color:red;
 }
 .about-token .content p{
     font-size:30px;
@@ -45,14 +62,15 @@ button{
 .social-link{
     text-align: center;
 }
-.social-link h2{
+.social-link h2, .road-map h1{
     display: grid;
     grid-template-columns: minmax(50px, 1fr)auto minmax(50px, 1fr);
     align-items: center;
     text-align:center;
     gap:40px;
 }
-.social-link h2::before, .social-link h2::after{
+.social-link h2::before, .social-link h2::after,
+.road-map h1::before, .road-map h1::after{
     content:'';
     border-top:6px double;
 }
@@ -83,12 +101,32 @@ button{
     box-shadow: 2px 6px 6px rgba(0,0,0,0.2);
     border-radius:20px;
 }
+.image-container{
+    height:50px;
+}
+.road-map h1{
+    font-family: 'Dongle', sans-serif !important;
+    font-size:60px;
+}
+
 .menu-icon, .social-icon{
     display: none;
   }
   .fa-bars{
     color: red;
   }
+
+  /* Home page */
+.top-section .card h1{
+    font-size:50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color:#fff;
+    line-height: 65px;
+}
+.top-section .card span{
+    font-size:70px;
+}
 /* old styel */
 header img{
     width:220px;
@@ -146,7 +184,7 @@ form button{
         left:0;
         opacity: 1;
         transition: all 1s ease;
-        height:90vh;
+        height:70vh;
         z-index: 1;
         color:red;
         }
@@ -161,18 +199,16 @@ form button{
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        margin-top: -5px;
+        margin-top: -8px;
         }
         .social-icon{
             display:inline;
-            flex: end;
         }
         .fa-times{
         font-size: 2rem;
         color: red;
         z-index: 2;
         }
-    
     .about-token .content h1{
         font-size: 50px;
     }
@@ -190,6 +226,7 @@ form button{
     }
     .token-distribution h1{
         font-size: 60px;
+        gap:20px;
     }
     .token-distribution .card h2{
         font-size: 25px;
@@ -198,7 +235,7 @@ form button{
         font-size:20px;
     }
     .card{
-        width:85vw;
+        width:89vw;
         margin-left:-10px;
     }
 }

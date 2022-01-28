@@ -3,13 +3,13 @@ import CopyClipboard from "../../components/button/copy-clipboard";
 export default function AboutToken(){
     
     return(
-        <div className="bg-white display-f align-center about-token" style={{minHeight:'100vh'}}>
+        <div className="bg-white display-f align-center about-token" style={{minHeight:'110vh'}}>
             <div className="container">
                 <div classname="row">
                     <div className="col-6-sm col-6-md">
                         <div className="content">
                             <h1>
-                                This is <br/>Shiroi $SHI
+                                This is <br/>Shiroi <span className="shi">$SHI</span>
                             </h1>
                             <p>Shiroi $SHI is base on Gaming, VR and Multiverse Token.</p>
                         </div>
@@ -29,7 +29,7 @@ export default function AboutToken(){
                         </div>
                         <div className="mt-3">
                             <button className="btn btn-red br-md pl-3 pr-3 p-1 font-3 text-white mb-1">Buy Shiroi $SHI</button>
-                            <button className="ml-1 btn btn-white br-md pl-3 pr-3 text-black address"><CopyClipboard value="0x0918700Dd458b3573cb7207063f91219Af88e209"/></button>
+                            <button className="ml-1 btn btn-white br-md pl-2 pr-2 text-black address"><CopyClipboard value="0x0918700Dd458b3573cb7207063f91219Af88e209"/></button>
                             
                         </div>
                         <div className="mt-3 social-link">
