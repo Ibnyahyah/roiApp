@@ -1,4 +1,5 @@
 import AboutToken from "../../New_component/about_token/about";
+import Faqs from "../../New_component/Faqs/Faqs";
 import HowToBuy from "../../New_component/Faqs/HowTOBuy";
 import Footer from "../../New_component/footer/footer";
 import NavBar from "../../New_component/navigation/nav"
@@ -13,6 +14,7 @@ const Token = ()=>{
             <Tokenomics/>
             <RoadMap/>
             <HowToBuy/>
+            <Faqs/>
             {/* 
                 @TODO Faqs,donation
             */}
