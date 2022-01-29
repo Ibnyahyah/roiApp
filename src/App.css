@@ -17,7 +17,6 @@ button{
     top:0;
     left:0;
     right:0;
-    background-color: rgba(26, 26, 26, 0.3);
 }
 /* about-token */
 .about-token{
@@ -61,6 +60,7 @@ button{
 }
 .social-link{
     text-align: center;
+    font-size:24px;
 }
 .social-link h2, .road-map h1{
     display: grid;
@@ -127,6 +127,14 @@ button{
 .top-section .card span{
     font-size:70px;
 }
+/* faqs */
+.faqs{
+    width:100%;
+    min-height:100vh;
+    background-image: repeating-conic-gradient(from 45deg, #fff 0deg 90deg, #E2E2E2 90deg 180deg);
+    background-size:3em 3em ;
+}
+
 /* old styel */
 header img{
     width:220px;
@@ -169,46 +177,49 @@ form button{
     */
 
     .item{
-        display: flex;
-        flex-direction: column;
-        width:100%;
-        position: absolute;
-        top:80px;
-        left:-100%;
-        opacity: 1;
-        transition: all 0.9s ease;
-        }
-        .item.active{
-        background: #fff;
-        padding-top:20px;
-        left:0;
-        opacity: 1;
-        transition: all 1s ease;
-        height:70vh;
-        z-index: 1;
-        color:red;
-        }
-        .item.active li{
-          margin-top:10px;
-        }
-        .menu-icon{
-        display: block;
-        position:absolute;
-        top:0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
-        cursor: pointer;
-        margin-top: -8px;
-        }
-        .social-icon{
-            display:inline;
-        }
-        .fa-times{
-        font-size: 2rem;
-        color: red;
-        z-index: 2;
-        }
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    position: absolute;
+    top:80px;
+    left:-100%;
+    opacity: 1;
+    transition: all 0.9s ease;
+    }
+    .item.active{
+    background: #fff;
+    padding-top:20px;
+    left:0;
+    opacity: 1;
+    transition: all 1s ease;
+    height:70vh;
+    z-index: 1;
+    color:red;
+    }
+    .item.active li{
+        margin-top:10px;
+    }
+    .menu-icon{
+    display: block;
+    position:absolute;
+    top:0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-top: -8px;
+    }
+    .social-icon{
+        display:inline;
+    }
+    .fa-times{
+    font-size: 2rem;
+    color: red;
+    z-index: 2;
+    }
+    .about-token{
+        margin-left: -10px;
+    }
     .about-token .content h1{
         font-size: 50px;
     }
@@ -216,7 +227,8 @@ form button{
         font-size:25px;
     }
     .about-token .address{
-        margin-left: -10px;
+        width:100%;
+        margin: auto;
     }
     .token-details h1{
         font-size:50px;
@@ -227,9 +239,16 @@ form button{
     .token-distribution h1{
         font-size: 60px;
         gap:15px;
+        margin-left:-10px;
     }
     .social-link h2, .road-map h1{
-        gap:15px;
+        gap:10px;
+    }
+    .social-link h2{
+        font-size:20px;
+        margin-left:-10px;
+        width:90vw;
+        grid-template-columns: minmax(30px, 50px)auto minmax(30px, 50px);
     }
     .token-distribution .card h2{
         font-size: 25px;
@@ -240,6 +259,10 @@ form button{
     .card{
         width:89vw;
         margin-left:-10px;
+    }
+    .faqs h1{
+        font-size: 20px;
+        font-weight:500;
     }
 
      /* Home page */

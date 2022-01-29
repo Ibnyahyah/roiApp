@@ -27,9 +27,9 @@ export default function AboutToken(){
                                 <p>TELEGREAM Members</p>
                             </div>
                         </div>
-                        <div className="mt-3">
-                            <button className="btn btn-red br-md pl-3 pr-3 p-1 font-3 text-white mb-1">Buy Shiroi $SHI</button>
-                            <button className="ml-1 btn btn-white br-md pl-2 pr-2 text-black address"><CopyClipboard value="0x0918700Dd458b3573cb7207063f91219Af88e209"/></button>
+                        <div className="mt-3 about-button-container">
+                            <button className="btn-red br-md pl-3 pr-3 p-1 font-3 text-white mb-1">Buy Shiroi $SHI</button>
+                            <CopyClipboard value="0x0918700Dd458b3573cb7207063f91219Af88e209"/>
                             
                         </div>
                         <div className="mt-3 social-link">

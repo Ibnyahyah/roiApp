@@ -15,9 +15,9 @@ export default function NavBar(){
 
 
     return(
-        <div className="navbar">
+        <div className="navbar bg-white">
             <nav className="container">
-                <Link to="/" className="site-title text-white font-3">
+                <Link to="/" className="site-title font-3">
                     SHIROI$
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
@@ -30,8 +30,8 @@ export default function NavBar(){
                     <li className="m-1 font-md font-3 text-gray-light-6">STORE<sup className="text-red">soon</sup></li>
                     <li className="m-1 font-md font-3 text-gray-light-6">STAKE<sup className="text-red">soon</sup></li>
                     <li className="m-1 font-md font-3 text-gray-light-6">GAME<sup className="text-red">soon</sup></li>
-                    <button className=" m-1 btn btn-white br-md pl-3 pr-3 text-red">1$ = Token</button>
-                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x0918700Dd458b3573cb7207063f91219Af88e209" target="_blank" rel="noreferrer" className=" m-1 btn btn-red br-md pl-3 pr-3 font-3 text-white">Buy SHIROI$</a>    
+                    <button className=" m-1 btn br-md pl-3 pr-3 text-red">1$ = Token</button>
+                    <a href="https://pancakeswap.finance/swap?outputCurrency=0x0918700Dd458b3573cb7207063f91219Af88e209" target="_blank" rel="noreferrer" className=" m-1 btn-red br-md pl-3 pr-3 font-3 text-white">Buy SHIROI$</a>    
                     <h2 className="text-center mt-5 social-icon">OUR COMMUNITY</h2>
                     <div className="mt-1 display-i text-center social-icon">
                         <a href="https://t.me/shiroiofficial" target="_blank" rel="noreferrer" className="text-red-light-2"><i className="fab fa-telegram fa-2x"></i></a>
