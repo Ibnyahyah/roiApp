@@ -1,4 +1,4 @@
-import { FirstWave, SecondWave } from "../svg_waves/wave"
+import { FirstWave, SecondWave } from "../../svg_waves/wave"
 import { RoadMapData } from "./road-map_data"
 
 export default function RoadMap(){

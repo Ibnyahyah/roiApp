@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Footer(){
     return(
         <div>
@@ -9,9 +11,9 @@ function Footer(){
                     <div className="col-6-sm col-4-md">
                         <ul>
                             <li className="font-4">INFORMATIONS</li>
-                            <li>Whitepaper</li>
-                            <li>Liquidity Lock</li>
-                            <li>Hub</li>
+                            <li><a href="./shiroi_whitepaper.docx" rel="noreferrer" download="SHIROI WHITEPAPER VERSION 1.0">Whitepaper</a></li>
+                            <li><Link>Liquidity Locked</Link></li>
+                            <li><Link>ShiroiHub</Link></li>
                         </ul>
                     </div>
                 </div>

@@ -1,4 +1,4 @@
-import CopyClipboard from "../../components/button/copy-clipboard";
+import CopyClipboard from "../../button/copy-clipboard";
 
 export default function AboutToken(){
     
@@ -42,7 +42,7 @@ export default function AboutToken(){
                         </div>
                     </div>
                     <div className="col-6-sm col-6-md whitepaper-container">
-                        <a href="./shiroi_whitepaper.pdf" target="_blank" rel="noreferrer" download="Shiroi Whitepaper V1">
+                        <a href="./shiroi_whitepaper.docx" target="_blank" rel="noreferrer" download="SHIROI WHITEPAPER VERSION 1.0">
                             <img src="./images/whitepaper.png" alt="Shiroi Whitepaper"/>
                         </a>
                     </div>

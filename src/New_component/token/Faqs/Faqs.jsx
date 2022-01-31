@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CopyClipboard from "../../button/copy-clipboard";
 
 export default function Faqs(){
 
@@ -146,6 +147,22 @@ export default function Faqs(){
                                 reas with government bans on Crypto do not purchase it because the team cannot ensure compliance with your territory’s 
                                 regulations. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
                         </p>:null}
+                </div>
+                        <hr className="mt-3 mb-3"/>
+                {/* // Donantion */}
+                <div>
+                    <div className="row">
+                        <div className="col-6-sm col-6-md"></div>
+                        <div className="col-6-sm col-6-md">
+                            <div className="card bg-white">
+                                <h1 style={{color:'#f55145', fontFamily: "'Dongle', sans-serif"}}>DONATE TO SHIROI DEV</h1>
+                                <p className="mt-2 mb-1">If you like our work, and you will like to support us to keep us growing,
+                                    you can send your donation to this address. Any token is accepted,
+                                    THANK you for your support!</p>
+                                    <CopyClipboard value="0x0918700Dd458b3573cb7207063f91219Af88e209"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
         </div>
        </div>

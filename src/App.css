@@ -6,6 +6,9 @@ html{
 body{
     font-family: 'Source Sans Pro', sans-serif !important;
 }
+a{
+    outline:none;
+}
 .br-md{
     border-radius: 20px;
 }
@@ -67,8 +70,11 @@ button{
 .buy{
     height:35vh;
 }
-.buy h1{
+.how-to-buy-header{
     animation: colorChange 3s infinite linear;
+    font-size:50px;
+    margin-bottom: 30px;
+    text-decoration:underline;
 }
 .buy img{
     animation: buyBounce 3s infinite ease-out;
@@ -165,6 +171,10 @@ button{
   }
 
   /* Home page */
+.top-section{
+    background-image: repeating-conic-gradient(from 45deg, #fff 0deg 90deg, #E2E2E2 90deg 180deg);
+    background-size:3em 3em ;
+}
 .top-section .card h1{
     font-size:50px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -174,6 +184,10 @@ button{
 }
 .top-section .card span{
     font-size:70px;
+}
+.project-img img{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 /* faqs */
 .faqs{
@@ -266,7 +280,7 @@ form button{
     z-index: 2;
     }
     .about-token{
-        margin-top:100px;
+        margin-top:120px;
     }
     .about-token .content h1{
         font-size: 50px;
@@ -331,7 +345,10 @@ form button{
         margin-left:-4em;
     }
     .buy{
-        height:50vh;
+        height:60vh;
+    }
+    .how-to-buy-header{
+        font-size:20px;
     }
 }
 @media screen and (max-width:360px){

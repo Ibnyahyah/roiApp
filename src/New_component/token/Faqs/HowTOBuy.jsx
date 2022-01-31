@@ -3,16 +3,15 @@ import { Data } from "./dummy"
 export default function HowToBuy(){
     return(
         <div style={{backgroundColor: 'rgba(0,0, 0, 0.03)'}}>
-            <div className="container display-f align-center" style={{minHeight:'100vh'}}>
+        <div className="container display-f align-center" style={{minHeight:'100vh'}}>
                 <div className="row gap-1">
                     <div className="col-6-md col-6-lg">
+                    <h1 className="how-to-buy-header text-center">HOW TO BUY SHIROI$</h1>
                         <div className="text-center buy">
-                            <h1>Buy Shiroi$</h1>
                             <img src="./shiroi_token.png" className="br-full mt-1 mb-2" alt="Shiroi Logo"/>
                         </div>
                     </div>
                     <div className="col-6-md col-6-lg">
-                        <h1>HOW TO BUY <span className="shi">$SHI</span></h1>
                         <ul className="mt-2">
                             {Data.map(({header,content}, index)=>{
                                 return(
