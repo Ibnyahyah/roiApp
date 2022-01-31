@@ -12,9 +12,9 @@ export default function RoadMap(){
                         {RoadMapData.map(({content,check},index)=>{
                             return(
                                 <div className="col-6-sm col-4-md" key={index}>
-                                    <div className={`display-f align-center card ${check?'bg-red-light-6 text-white':'text-black'}`}>
+                                    <div className={`display-f align-center card pl-1 pr-1 ${check?'bg-red-light-6 text-white':'text-black'}`}>
                                         {/* <input type="checkbox" className="ml-1" style={{border:'none'}} readOnly checked={check?true:false}/> */}
-                                        <h2 className="ml-2 font-3 ">{content}</h2>
+                                        <h2 className="font-3">{content}</h2>
                                     </div>
                                 </div>
                             )

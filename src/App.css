@@ -11,12 +11,17 @@ body{
 }
 button{
     box-shadow:1px 4px 6px rgba(0,0,0,0.05);
+    background-color:#f55145;
 }
 .navbar{
     position:fixed;
     top:0;
     left:0;
     right:0;
+}
+.site-logo img{
+    width:200px;
+    height:80px;
 }
 /* about-token */
 .about-token{
@@ -41,12 +46,55 @@ button{
         1px 22px 10px rgba(16,16,16,0.2),
         1px 25px 35px rgba(16,16,16,0.2),
         1px 30px 60px rgba(16,16,16,0.4);
-        color:red;
+        color:#f55145;
 }
 .about-token .content p{
     font-size:30px;
     margin-top:20px;
     font-family: 'Dongle', sans-serif !important;
+}
+.whitepaper-container{
+    height:40vh;
+}
+.whitepaper-container img{
+    animation: Bounce 3s infinite ease-out;
+
+}
+@keyframes Bounce {
+    0%,100% {margin-top:0px;}
+    50% {margin-top:50px}
+}
+.buy{
+    height:35vh;
+}
+.buy h1{
+    animation: colorChange 3s infinite linear;
+}
+.buy img{
+    animation: buyBounce 3s infinite ease-out;
+}
+@keyframes buyBounce {
+    0%,100%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+}
+@keyframes colorChange {
+    25%{
+        color:#f55145;
+    }
+    50%{
+        color:#ffb8b3;
+    }
+    75%{
+        color:#ffe3e1;
+    }
+    100%{
+        color:#757373;
+    }
 }
 .token-details{
     text-align: center;
@@ -207,7 +255,7 @@ form button{
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    margin-top: -8px;
+    margin-top: 12px;
     }
     .social-icon{
         display:inline;
@@ -218,7 +266,7 @@ form button{
     z-index: 2;
     }
     .about-token{
-        margin-left: -10px;
+        margin-top:100px;
     }
     .about-token .content h1{
         font-size: 50px;
@@ -227,11 +275,11 @@ form button{
         font-size:25px;
     }
     .about-token .address{
-        width:100%;
+        /* width:100%; */
         margin: auto;
     }
     .token-details h1{
-        font-size:50px;
+        font-size:45px;
     }
     .token-details p{
         font-size:20px;
@@ -246,8 +294,8 @@ form button{
     }
     .social-link h2{
         font-size:20px;
-        margin-left:-10px;
-        width:90vw;
+        /* margin-left:-10px; */
+        text-align: center;
         grid-template-columns: minmax(30px, 50px)auto minmax(30px, 50px);
     }
     .token-distribution .card h2{
@@ -256,10 +304,13 @@ form button{
     .token-distribution .card p{
         font-size:20px;
     }
-    .card{
-        width:89vw;
-        margin-left:-10px;
+    .road-map h2{
+        font-size:15px;
     }
+    /* .card{
+        width:82vw;
+        margin-left:-8px;
+    } */
     .faqs h1{
         font-size: 20px;
         font-weight:500;
@@ -275,6 +326,9 @@ form button{
     }
     .top-section .card span{
         font-size:50px;
+    }
+    .site-logo{
+        margin-left:-4em;
     }
 }
 @media screen and (max-width:360px){

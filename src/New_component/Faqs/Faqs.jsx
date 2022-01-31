@@ -67,7 +67,7 @@ export default function Faqs(){
     return(
        <div className="faqs display-f align-center">
             <div className="container">
-                <h1 className="text-center font-xl">FAQS</h1>
+                <h1 className="text-center font-xl mb-3 font-3">FAQS</h1>
                 <div className={`card p-0 mb-2 bg-white ${whyShiroi === true ?'pb-1':null}`}>
                     <div className="card bg-red-light-7 display-f justify-space-between align-center" onClick={OpenWhyShiroi}>
                         <h1 className="ml-1 font-lg font-3 text-white">Why Shiroi$ ?</h1>
