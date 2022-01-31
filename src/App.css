@@ -330,6 +330,9 @@ form button{
     .site-logo{
         margin-left:-4em;
     }
+    .buy{
+        height:50vh;
+    }
 }
 @media screen and (max-width:360px){
     nav ul li a{
